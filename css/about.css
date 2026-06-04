@@ -1,0 +1,237 @@
+/* ========================================
+   ABOUT SECTION STYLES
+   ======================================== */
+
+.about-section {
+  width: 100%;
+  background-color: var(--bg-white);
+  padding: var(--spacing-2xl) var(--spacing-md);
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-2xl);
+  align-items: start;
+}
+
+/* About Content */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.about-heading h1 {
+  color: var(--text-dark);
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: var(--spacing-md);
+}
+
+/* Features Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+}
+
+.feature-item {
+  display: flex;
+  gap: var(--spacing-lg);
+  align-items: flex-start;
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--border-radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: var(--bg-light);
+}
+
+.feature-icon img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.feature-content h2 {
+  font-size: var(--font-size-lg);
+  color: var(--text-dark);
+  margin: 0 0 var(--spacing-sm) 0;
+}
+
+.feature-content p {
+  color: var(--text-light);
+  margin: 0;
+  line-height: 1.8;
+  text-align: justify;
+  font-size: var(--font-size-sm);
+}
+
+/* Contact Form */
+.contact-form-wrapper {
+  background-color: var(--text-dark);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  text-align: center;
+}
+
+.contact-form h3 {
+  color: var(--bg-white);
+  font-size: var(--font-size-xl);
+  margin: 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--text-light);
+  color: var(--bg-white);
+  padding: var(--spacing-md) 0;
+  font-size: var(--font-size-base);
+  transition: border-color var(--transition-base);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--text-light);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-bottom-color: var(--primary-color);
+}
+
+.form-submit {
+  background-color: var(--bg-white);
+  color: var(--text-dark);
+  border-radius: var(--border-radius-lg);
+  border: none;
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.form-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.form-submit:active {
+  transform: translateY(0);
+}
+
+/* Responsive About */
+@media (max-width: 1024px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  .about-heading h1 {
+    font-size: var(--font-size-2xl);
+  }
+
+  .contact-form-wrapper {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: var(--spacing-xl) var(--spacing-md);
+  }
+
+  .feature-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .feature-content p {
+    text-align: center;
+  }
+
+  .about-heading h1 {
+    font-size: var(--font-size-xl);
+    text-align: center;
+  }
+
+  .contact-form-wrapper {
+    padding: var(--spacing-lg);
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: var(--spacing-lg) var(--spacing-sm);
+  }
+
+  .feature-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .feature-icon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .feature-content h2 {
+    font-size: var(--font-size-base);
+  }
+
+  .feature-content p {
+    font-size: var(--font-size-xs);
+  }
+
+  .about-heading h1 {
+    font-size: var(--font-size-lg);
+  }
+
+  .contact-form {
+    gap: var(--spacing-md);
+  }
+
+  .contact-form h3 {
+    font-size: var(--font-size-lg);
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: var(--spacing-sm) 0;
+    font-size: var(--font-size-sm);
+  }
+
+  .form-submit {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--font-size-sm);
+  }
+}

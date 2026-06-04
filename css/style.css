@@ -1,0 +1,37 @@
+/* ========================================
+   MAIN STYLESHEET - IMPORTS ALL MODULES
+   ======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;600;700&family=Candara:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+/* Import all CSS modules */
+@import url('./variables.css');
+@import url('./base.css');
+@import url('./navigation.css');
+@import url('./hero.css');
+@import url('./courses.css');
+@import url('./about.css');
+@import url('./trainers.css');
+@import url('./reviews.css');
+@import url('./contact.css');
+@import url('./footer.css');
+@import url('./gallery.css');
+
+/* Additional Global Adjustments */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}

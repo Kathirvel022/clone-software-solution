@@ -1,0 +1,123 @@
+/* ========================================
+   COURSES SECTION STYLES
+   ======================================== */
+
+.courses-section {
+  width: 100%;
+  background-color: var(--bg-white);
+  padding: var(--spacing-2xl) var(--spacing-md);
+}
+
+.courses-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Course Card */
+.course-card {
+  background-color: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-md);
+  padding: var(--spacing-lg);
+  transition: all var(--transition-base);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  overflow: hidden;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Course Number */
+.course-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: var(--border-radius-full);
+  background-color: #2ecc71;
+  color: var(--bg-white);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.course-card h3 {
+  color: var(--text-muted);
+  font-size: var(--font-size-lg);
+  margin: 0;
+  font-weight: 700;
+}
+
+.course-card p {
+  color: var(--text-light);
+  font-size: var(--font-size-sm);
+  line-height: 1.8;
+  margin: 0;
+  flex-grow: 1;
+  text-align: justify;
+}
+
+/* Responsive Courses */
+@media (max-width: 1024px) {
+  .courses-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+  }
+
+  .courses-section {
+    padding: var(--spacing-xl) var(--spacing-md);
+  }
+}
+
+@media (max-width: 768px) {
+  .courses-container {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .course-card {
+    padding: var(--spacing-md);
+  }
+
+  .course-card h3 {
+    font-size: var(--font-size-base);
+  }
+
+  .course-card p {
+    font-size: var(--font-size-xs);
+  }
+}
+
+@media (max-width: 480px) {
+  .courses-section {
+    padding: var(--spacing-lg) var(--spacing-sm);
+  }
+
+  .course-card {
+    padding: var(--spacing-md) var(--spacing-sm);
+  }
+
+  .course-number {
+    width: 50px;
+    height: 50px;
+    font-size: var(--font-size-lg);
+  }
+
+  .course-card h3 {
+    font-size: var(--font-size-sm);
+  }
+
+  .course-card p {
+    font-size: var(--font-size-xs);
+    line-height: 1.6;
+  }
+}

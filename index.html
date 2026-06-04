@@ -1,265 +1,326 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=muli&effect=outline">
-<title>Welcome</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Software Solution - Professional Training Institute for Web Development, Mobile App Development, and Full Stack Development">
+  <meta name="keywords" content="software training, web development, mobile app, full stack development">
+  <meta name="author" content="Software Solution">
+  
+  <title>Software Solution - Professional Training Institute</title>
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="sticky">
-<header>
-</header>
-<nav>
-<ul>
-	<li class="k">SOFTWARE SOLUTION</li>
-        <li class="n"><a href="#h">Home</a></li>
-	<li><a href="#a">About</a></li>
-	<li><a href="#o">Our Trainers</a></li>
-	<li><a href="#c0">Courses</a></li>
-	<li><a href="#r">Reviews</a></li>
-	<li><a href="#c00">Contact</a></li>
-	<li><a href="gallery.html" target="_blank">Gallery</a></li>
-	<li style="float:right;"><a href="http://wa.me/+919344127179" target="_blank" class="fa">&#xf232; +91 93 44 12 71 79</a></li>
-</ul>
-</nav>
-</div>
-<section>
-<article>
-
-<div class="pic" id="h">
-	<div class="text">
-<h1 class="h1">Self Learning</h1>
-<p style="color:white;font-weight:bold;text-shadow:2px 2px 2px black;">Self-learning is becoming increasingly popular, as it allows individuals to leam at their own pace and on their own schedule</p>
-<button class="top">Discover more</button>
-	</div>
-</div>
-
-<div class="course">
- <div class="dev">
-  <div class="hb">
-   <span class="num">01</span>
-   <h3>WEB DESIGN & DEVELOPMENT</h3>
-   <p class="details">A web design course is a program that teaches individuals how to design and create visually appealing and user-friendly websites. These courses cover a wide range of topics, including design principles, layout, color theory, typography, and user experience (UX) design. Web developers also use various frameworks, content management systems, and databases to build and manage websites.</p>
-  </div>
- </div>
- <div class="dev" id="">
-  <div class="hb">
-  <span class="num">02</span>
-  <h3>MOBILE APP DEVELOPMENT</h3>
-  <p class="details">Mobile app development include the design, development, testing, and deployment of the app, as well as ongoing maintenance and updates. Mobile app development can be done using various programming languages and tools, and can include both native app development (specific to a particular operating system, such as iOS or Android) and cross-platform app development.</p>
-  </div>
- </div>
- <div class="dev">
-  <div class="hb">
-  <span class="num">03</span>
-  <h3>FULL STACK DEVELOPMENT</h3>
-  <p class="details">Full stack developer typically has expertise in multiple programming languages and technologies, including HTML, CSS, JavaScript, and various back-end languages and frameworks such as Java, Python, Ruby, and Node.js. Full stack developers are equipped to work on both the front-end and back-end, and can bridge the gap between the two.</p>
-  </div>
- </div>
-</div>
-
-<div id="a">
-<div class="container">
-<div>
-  <div class="head">
-<h1 class="bold">Start your JOURNEY to a better life with Mobile and Full Stack Development courses</h1>
-  </div>
-	<div class="pack">
-	 <img src="people.jpg" width="50px" height="50px" alt="people">
-	 <h2>Professional Trainers</h2>
-	 <p>Our trainers typically have a strong background in the software or technology they are teaching, and have a deep understanding of the subject matter. They are also skilled in instructional design, and are able to present complex information in a clear and understandable manner. Professional software trainers are experts in their field and they can help individuals to acquire the skills and knowledge necessary to succeed in the software development or IT industry. They are also responsible for keeping the training content updated with the latest trends and technologies in the field.</p>
-	</div>
-	<div class="pack">
-	 <img src="certificate0.png" width="50px" height="50px" alt="certificate">
-	 <h2>Certifications</h2>
-	 <p>A software training institute certificate is considered a valuable asset for individuals looking to enhance their skills and advance their careers in the field of software development or IT. It demonstrates to potential employers that the individual has a certain level of expertise and is capable of working with the software or technology. Obtaining a certificate from a reputable software training institute can help individuals to stand out in a crowded job market and increase their chances of getting hired. It also help individuals to stay updated with the latest trends and technologies in the field.</p>
-	</div>
-	<div class="pack">
-	 <img src="growth.jpg" width="50px" height="50px" alt="growth">
-	 <h2>Placement Support</h2>
-	 <p>Techy Toper creates the space for navigate the job market and identify job opportunities that align with their skills and interests. And also help students to create a professional resume and cover letter, and prepare for interviews. It can help them to acquire the skills and knowledge necessary to succeed in the field, and connect them with potential employers to increase their chances of getting hired.</p>
-	</div>
-</div>
- <div>
-  <div class="form">
-<center>
-<form class="content">
-<h3>Enquiry Now</h3><br><br>
-<input type="text" max="20" placeholder="Full name"><br><br>
-<input type="email" placeholder="Your email address"><br><br>
-<input type="password" min="8" placeholder="Your password"><br><br>
-<button class="submit">Get started</button>
-</form>
-</center>
-  </div>
- </div>
-</div>
-</div>
-
-
-<div class="staff" id="o">
- <center><div class="header">
-   <h2>TEACHERS</h2>
-   <h3>Meet Professional Trainers</h3>
- </div></center>  
-
- <div class="avatar">
-
-  <div class="trainer">
-    <img src="author-image4.jpg" width="100%" height="300">
-    <h4>Kalirajan</h4>
-    <p class="train">Trainer</p>
+  <!-- ========================================
+       HEADER & NAVIGATION
+       ======================================== -->
+  <div class="sticky-header">
+    <div class="top-bar"></div>
+    
+    <nav>
+      <ul>
+        <li class="nav-brand">SOFTWARE SOLUTION</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#trainers">Our Trainers</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="pages/gallery.html">Gallery</a></li>
+        <li class="nav-contact">
+          <a href="https://wa.me/+919344127179" target="_blank" rel="noopener noreferrer">
+            <span class="fa-brands fa-whatsapp"></span>
+            <span class="hidden-mobile">+91 93 44 12 71 79</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </div>
 
-  <div class="trainer">
-    <img src="author-image1.jpg" width="100%" height="300">
-    <h4>Maha Devi</h4>
-    <p class="train">Trainer</p>
-  </div>
+  <!-- ========================================
+       MAIN CONTENT
+       ======================================== -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Self Learning</h1>
+        <p>Self-learning is becoming increasingly popular, as it allows individuals to learn at their own pace and on their own schedule. Embrace flexibility and take control of your educational journey.</p>
+        <button class="hero-btn">Discover More</button>
+      </div>
+    </section>
 
-  <div class="trainer">
-    <img src="author-image4.jpg" width="100%" height="300">
-    <h4>Ramesh</h4>
-    <p class="train">Trainer</p>
-  </div>
+    <!-- Courses Section -->
+    <section class="courses-section" id="courses">
+      <div class="courses-container">
+        <article class="course-card">
+          <div class="course-number">01</div>
+          <h3>WEB DESIGN & DEVELOPMENT</h3>
+          <p>A web design course teaches individuals how to design and create visually appealing and user-friendly websites. These courses cover design principles, layout, color theory, typography, and user experience (UX) design. Web developers use various frameworks, content management systems, and databases to build and manage websites effectively.</p>
+        </article>
 
-  <div class="trainer">
-    <img src="author-image1.jpg" width="100%" height="300">
-    <h4>Anisha</h4>
-    <p class="train">Trainer</p>
-  </div>
+        <article class="course-card">
+          <div class="course-number">02</div>
+          <h3>MOBILE APP DEVELOPMENT</h3>
+          <p>Mobile app development includes design, development, testing, and deployment of applications, as well as ongoing maintenance and updates. Development can be done using various programming languages and tools, including both native app development (iOS or Android) and cross-platform app development approaches.</p>
+        </article>
 
- </div>
-</div>
+        <article class="course-card">
+          <div class="course-number">03</div>
+          <h3>FULL STACK DEVELOPMENT</h3>
+          <p>Full stack developers have expertise in multiple programming languages and technologies, including HTML, CSS, JavaScript, and various back-end languages and frameworks such as Java, Python, Ruby, and Node.js. They work on both front-end and back-end, bridging the gap between the two seamlessly.</p>
+        </article>
+      </div>
+    </section>
 
-<div class="skill" id="c0">
- <center><div class="header">
-   <h2>Popular Courses</h2>
-   <h3>Upgrade your skills with newest courses</h3>
- </div></center>  
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="about-container">
+        <!-- About Content -->
+        <div class="about-content">
+          <div class="about-heading">
+            <h1>Start Your Journey to a Better Life</h1>
+            <p>With Mobile and Full Stack Development Courses</p>
+          </div>
 
- <div class="mycourse">
+          <div class="features-grid">
+            <!-- Feature 1 -->
+            <div class="feature-item">
+              <div class="feature-icon">
+                <img src="assets/people.jpg" alt="Professional Trainers Icon">
+              </div>
+              <div class="feature-content">
+                <h2>Professional Trainers</h2>
+                <p>Our trainers have strong backgrounds in software and technology with deep understanding of subject matter. They are skilled in instructional design and present complex information clearly. Professional software trainers are experts in their field and help individuals acquire necessary skills for success in software development and IT industry. They maintain updated training content with latest trends and technologies.</p>
+              </div>
+            </div>
 
-  <div class="software">
-    <img src="pexels-max-fischer-5212695.jpg" width="100%" height="250">
-    <h4>Python</h4>
-    <p class="soft">Python is a high-level, interpreted, general-purpose programming language that is widely used for a wide range of applications, including web development, data science, machine leaming, artificial intelligence, scientific computing, and more...</p><br>
-    <button class="btn">see more</button>
-  </div>
+            <!-- Feature 2 -->
+            <div class="feature-item">
+              <div class="feature-icon">
+                <img src="assets/certificate0.png" alt="Certifications Icon">
+              </div>
+              <div class="feature-content">
+                <h2>Certifications</h2>
+                <p>A software training institute certificate is a valuable asset for individuals seeking to enhance their skills and advance careers in software development or IT. It demonstrates expertise and capability with specific software or technology to potential employers. Obtaining a certificate from a reputable institute helps individuals stand out in competitive job markets and increases chances of employment. It also helps individuals stay updated with latest trends and technologies in the field.</p>
+              </div>
+            </div>
 
-  <div class="software">
-    <img src="pexels-katerina-holmes-5905701.jpg" width="100%" height="250">
-    <h4>JAVA</h4>
-    <p class="soft">JAVA is an object-oriented language, which means that it is based on the concept of "objects" that have certain properties and methods. Java is platform-independent. meaning that it can run on a variety of different operating systems, including Windows, Mac, and Linux</p><br>
-    <button class="btn">see more</button>
-  </div>
+            <!-- Feature 3 -->
+            <div class="feature-item">
+              <div class="feature-icon">
+                <img src="assets/growth.jpg" alt="Placement Support Icon">
+              </div>
+              <div class="feature-content">
+                <h2>Placement Support</h2>
+                <p>Our institute provides comprehensive support for navigating job markets and identifying opportunities aligned with student skills and interests. We help students create professional resumes and cover letters, and prepare for interviews. Our support helps students acquire necessary skills and knowledge for success, and connects them with potential employers to increase chances of securing suitable employment.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  <div class="software">
-    <img src="pexels-keira-burton-6147053.jpg" width="100%" height="250">
-    <h4>Web Designing</h4>
-    <p class="soft">Web design includes creating wireframe and mockups, creating interactive elements such as forms, buttons, and interactive menus and creating user experience and user interface design. Web designing is an ever-evolving field with new technologies and trends appearing constantly</p>
-    <button class="btn">see more</button>
-  </div>
-
- </div>
-</div>
-
-<div class="staff" id="r">
- <center><div class="header">
-   <h2>Student Reviews</h2>
-   <h3>from around the world</h3>
- </div></center>  
-
- <div class="avatars">
-  <div class="contain">
-   <div class="con">
-    <img src="author-image4.jpg" width="60" height="60" class="circle">
-    <h4 class="align">Arun</h4>
-    <center><p class="subalign">Mobile App Developer</p><center>
-   </div>
-    <p class="review">The syllabus is really good with Exhaustive hands-on practicals. It is a really useful training for all Mobile App Developer & Our trainer was really good and could explain the concepts well. He was also available after training hours for any doubts we had for the practicals. I would highly recommend this training.</p>
-    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-  </div>
-
-  <div class="contain">
-   <div class="con">
-    <img src="author-image4.jpg" width="60" height="60" class="circle">
-    <h4 class="align">Ezra</h4>
-    <center><p class="subalign">Full Stack Developer</p><center>
-   </div>
-    <p class="review">The tutor was patient and experienced, he made the sessions as a real as it could be; he simply shared complete knowledge. They confirmed my progress and satisfaction. You guys are great & I would highly recommend this training.</p>
-    <p class="rate">&#9733;&#9733;&#9733;</p>
-  </div>
-
-  <div class="contain">
-   <div class="con">
-    <img src="author-image1.jpg" width="60" height="60" class="circle">
-    <h4 class="align">Rani</h4>
-    <center><p class="subalign">Web Developer</p><center>
-   </div>
-    <p class="review">Hii, This is Tamilselvan and I'm studying here over a month. Such an peaceful environment to learn and have experienced staff's to teach languages from the scratch. I'm coming here to learn full-stack from Tirunelveli. Trust me, if you spend your time here that'll be more worthy..Thanks..</p>
-    <p class="rate">&#9733;&#9733;&#9733;&#9733;</p>
-  </div>
- </div>
-</div>
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper">
+          <form class="contact-form">
+            <h3>Enquiry Now</h3>
+            <input type="text" placeholder="Full name" required aria-label="Full name">
+            <input type="email" placeholder="Your email address" required aria-label="Email address">
+            <input type="tel" placeholder="Your phone number" required aria-label="Phone number">
+            <button type="submit" class="form-submit">Get Started</button>
+          </form>
+        </div>
+      </div>
+    </section>
 
 
+    <!-- Trainers Section -->
+    <section class="trainers-section" id="trainers">
+      <div class="trainers-header">
+        <h2>Meet Our Expert Trainers</h2>
+        <p>Our team of experienced professionals dedicated to your success</p>
+      </div>
 
-<div class="contact" id="c00">
- <div class="mform">
-  
-  <div class="chead">
-  <h1 class="hcon">Contact us</h1>
-  <p class="pcon">we love conversations. let us talk!</p>
-  </div>
-  <div>
-  <form class="cform">
-   <input type="text" placeholder="Enter full name"><br><br>
-   <input type="email" placeholder="Enter email address"><br><br>
-   <textarea rows="10" cols="52" placeholder="Tell us about your message"></textarea><br><br>
-   <button class="send">Send Message</button>
-  </form>
-  </div>
- </div>
- <div class="photo">
-   <img src="Contact Us.png" width="400px" height="500px">
- </div>
-</div>
-</article>
-</section>
-<footer>
-<div class="box">
-<h1 class="hf">Our Location</h1>
-<p>
-No.11/228, Main Road,<br>
-Vadamalaipatty,Tenkasi-627423.<br>
-Tamilnadu-INDIA.<br>
-Contact: +91 9344127179<br>
-Mail:kathirvpy@gmail.com<br>
-Website:www.kathirsoftwaresolution.com
-</p>
+      <div class="trainers-container">
+        <article class="trainer-card">
+          <img src="assets/male-trainer.jpg" alt="Trainer Profile" class="trainer-image">
+          <div class="trainer-info">
+            <h3>Karthik Raj</h3>
+            <p>Expert Web Developer with 10+ years of experience in creating responsive and scalable web solutions.</p>
+          </div>
+        </article>
 
-<a href="https://www.instagram.com/kathir__22_/?hl=en" target="_blank" class="fa" id="logo">&#xf16d;</a>
-<a href="https://www.facebook.com/kathir.vpy.1" target="_blank" class="fa" id="logo">&#xf09a</a>
-<a href="https://www.linkedin.com/in/kathir-vel-931643374" class="fa" id="logo">&#xf08c;</a>
+        <article class="trainer-card">
+          <img src="assets/male-trainer.jpg" alt="Trainer Profile" class="trainer-image">
+          <div class="trainer-info">
+            <h3>Arjun Kumar</h3>
+            <p>Full Stack Developer specializing in modern JavaScript frameworks and cloud technologies.</p>
+          </div>
+        </article>
 
-<p>Copyright@ Kathir Software Solution</p>
-<p class="width">We are the best service provider for desktop applications, web applications, mobile apps, and more.</p>
-</div>
+        <article class="trainer-card">
+          <img src="assets/female-trainer.jpg" alt="Trainer Profile" class="trainer-image">
+          <div class="trainer-info">
+            <h3>Priya Devi</h3>
+            <p>Mobile App Development expert focusing on cross-platform solutions and native applications.</p>
+          </div>
+        </article>
 
-<div class="box">
-<h1 class="hf">Contact Info</h1>
-<a href="tel:+91 9344127179" id="link">+91 9344127179</a><br>
-<a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZdkLLzkPZfKCXQgCSSLZHjWFrpsmdrLwZvjbSNxcBFHWXZGGrzFptlZFqRvrQrqBKsWnq" id="link">kathirvpy@gmail.com</a>
-<h1 class="hf">Quick Links</h1>
-<a href="" id="link">career</a><a href="" id="link">Investor</a><a href="" id="link">Terms & Conditions</a><br>
-<a href="" id="link">Refund Policy</a>
-</div>
+        <article class="trainer-card">
+          <img src="assets/female-trainer.jpg" alt="Trainer Profile" class="trainer-image">
+          <div class="trainer-info">
+            <h3>Meena Rani</h3>
+            <p>UI/UX Designer and Frontend Developer passionate about creating beautiful user experiences.</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-<div class="box">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d205.655185282839!2d77.42577938210576!3d8.84047503732482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0424fe499d5aeb%3A0x150fa511cd67f983!2sVadamalaipatti%2C%20Tamil%20Nadu%20627415!5e1!3m2!1sen!2sin!4v1751211082810!5m2!1sen!2sin" width="90%" height="350" style="border:0;margin:30px 0 0 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
-</footer>
+    <!-- Reviews Section -->
+    <section class="reviews-section" id="reviews">
+      <div class="reviews-header">
+        <h2>Student Reviews</h2>
+        <p>Hear what our successful students have to say</p>
+      </div>
+
+      <div class="reviews-container">
+        <article class="review-card">
+          <div class="review-header">
+            <img src="assets/student1.jpeg" alt="Student Avatar" class="review-avatar">
+            <div class="review-author">
+              <h4>Abdul Qadir</h4>
+              <p>Web Development Course</p>
+            </div>
+          </div>
+          <div class="review-rating">★★★★★</div>
+          <p class="review-text">Excellent course with practical projects and supportive instructors. Learned so much and got placed within 2 months of completing the course. Highly recommended!</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-header">
+            <img src="assets/student2.jpeg" alt="Student Avatar" class="review-avatar">
+            <div class="review-author">
+              <h4>Naveen Kumar</h4>
+              <p>Full Stack Development</p>
+            </div>
+          </div>
+          <div class="review-rating">★★★★★</div>
+          <p class="review-text">Amazing learning experience with industry experts. The curriculum is up-to-date and the placement support team was incredibly helpful. Thanks for the opportunities!</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-header">
+            <img src="assets/student3.jpeg" alt="Student Avatar" class="review-avatar">
+            <div class="review-author">
+              <h4>Selvi</h4>
+              <p>Mobile App Development</p>
+            </div>
+          </div>
+          <div class="review-rating">★★★★★</div>
+          <p class="review-text">Best training institute I have attended. The mentors are knowledgeable and patient. Got placed at my dream company. Cannot thank enough!</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-header">
+            <img src="assets/student4.jpeg" alt="Student Avatar" class="review-avatar">
+            <div class="review-author">
+              <h4>Angel</h4>
+              <p>Web Development Course</p>
+            </div>
+          </div>
+          <div class="review-rating">★★★★★</div>
+          <p class="review-text">Professional training with real-world projects. The supportive environment helped me gain confidence. Highly satisfied with the outcome and results.</p>
+        </article>
+      </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h1>Get In Touch</h1>
+          <p>Have questions? Our team is ready to help you start your learning journey. Contact us today for more information about our courses and placement opportunities.</p>
+        </div>
+
+        <div class="contact-form-container">
+          <h3>Send us a Message</h3>
+          <form class="contact-form">
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required aria-label="Your Name">
+              <input type="email" placeholder="Your Email" required aria-label="Your Email">
+            </div>
+            <div class="form-group full">
+              <input type="tel" placeholder="Phone Number" required aria-label="Phone Number">
+            </div>
+            <div class="form-group full">
+              <textarea placeholder="Your Message" required aria-label="Message"></textarea>
+            </div>
+            <button type="submit" class="contact-submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================
+       FOOTER
+       ======================================== -->
+  <footer>
+    <div class="footer-container">
+      <!-- About Footer -->
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>Software Solution is a leading training institute providing professional courses in web development, mobile app development, and full stack programming with placement support.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <div class="footer-links">
+          <a href="#home" class="footer-link">Home</a>
+          <a href="#courses" class="footer-link">Courses</a>
+          <a href="#trainers" class="footer-link">Trainers</a>
+          <a href="#reviews" class="footer-link">Reviews</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+      </div>
+
+      <!-- Courses -->
+      <div class="footer-section">
+        <h3>Our Courses</h3>
+        <div class="footer-links">
+          <a href="#courses" class="footer-link">Web Design & Development</a>
+          <a href="#courses" class="footer-link">Mobile App Development</a>
+          <a href="#courses" class="footer-link">Full Stack Development</a>
+          <a href="pages/gallery.html" class="footer-link">View Gallery</a>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <div class="footer-links">
+          <a href="https://wa.me/+919344127179" target="_blank" rel="noopener noreferrer" class="footer-link">📞 +91 93 44 12 71 79</a>
+          <a href="mailto:info@softwaresolution.com" class="footer-link">✉️ info@softwaresolution.com</a>
+          <a href="#contact" class="footer-link">📍 Get Directions</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Software Solution. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="#" class="social-link" title="Facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-link" title="Twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-link" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="social-link" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
