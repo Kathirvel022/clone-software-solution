@@ -6,6 +6,7 @@
   <meta name="description" content="Software Solution - Professional Training Institute for Web Development, Mobile App Development, and Full Stack Development">
   <meta name="keywords" content="software training, web development, mobile app, full stack development">
   <meta name="author" content="Software Solution">
+  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
   
   <title>Software Solution - Professional Training Institute</title>
   
@@ -13,24 +14,29 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- ========================================
-       HEADER & NAVIGATION
-       ======================================== -->
+  <!-- HEADER & NAVIGATION -->
   <div class="sticky-header">
     <div class="top-bar"></div>
     
     <nav>
-      <ul>
-        <li class="nav-brand">SOFTWARE SOLUTION</li>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#trainers">Our Trainers</a></li>
-        <li><a href="#courses">Courses</a></li>
-        <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="pages/gallery.html">Gallery</a></li>
+      <a href="#home" class="nav-brand">SOFTWARE SOLUTION</a>
+      
+      <button class="hamburger" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#trainers" class="nav-link">Our Trainers</a></li>
+        <li><a href="#courses" class="nav-link">Courses</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="pages/gallery.html" class="nav-link">Gallery</a></li>
         <li class="nav-contact">
-          <a href="https://wa.me/+919344127179" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/+919344127179" target="_blank" rel="noopener noreferrer" class="nav-link">
             <span class="fa-brands fa-whatsapp"></span>
             <span class="hidden-mobile">+91 93 44 12 71 79</span>
           </a>
@@ -39,9 +45,7 @@
     </nav>
   </div>
 
-  <!-- ========================================
-       MAIN CONTENT
-       ======================================== -->
+  <!-- MAIN CONTENT -->
   <main>
     <!-- Hero Section -->
     <section class="hero" id="home">
@@ -265,9 +269,7 @@
     </section>
   </main>
 
-  <!-- ========================================
-       FOOTER
-       ======================================== -->
+  <!-- FOOTER -->
   <footer>
     <div class="footer-container">
       <!-- About Footer -->
@@ -322,5 +324,28 @@
       </div>
     </div>
   </footer>
+
+  <!-- Scripts -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('.nav-menu');
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  if (hamburger && navMenu) {
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+      });
+    });
+  }
+});
+  </script>
 </body>
 </html>
